@@ -1,0 +1,4 @@
+FirstName;LastName;Email;PhoneNumber
+fname1;lname1;;
+fname2;lname2;wrongemail;
+fname2;lname2;qweqwe@qwe.qwe;123123123

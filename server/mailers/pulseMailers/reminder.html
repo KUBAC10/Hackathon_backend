@@ -1,0 +1,86 @@
+ <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody >
+    <!-- title text -->
+    <tr align="center">
+      <td style="padding: 0 40px 10px;">
+        <p style="margin: 0; line-height: 36px; font-weight: 700; font-size: 28px;">
+          Hi,${username}
+        </p>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="padding: 0 40px">
+        <p style=" margin: 0; line-height: 36px; font-weight: 700; font-size: 28px;">
+          A gentle reminder, we’re waiting to hear from you
+        </p>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="padding: 20px 40px 0">
+        <p style="word-break: break-word; margin: 0; line-height: 28px; font-size: 18px; font-weight: 400">
+          There are ${numberOfQuestions} question to answer this time. It should not take more than ${passTime} minutes to answer
+        </p>
+      </td>
+    </tr>
+    <!-- title text end -->
+    <!-- main image -->
+    <tr>
+      <td align="center" style="padding:30px 0">
+        <img class="mainIllustration" src="${hostname}/mailers/mailer-question-logo-calendar.png" alt="Main illustration" width="300px" border="0"/>
+      </td>
+    </tr>
+    <!-- main image end -->
+    <!-- survey button -->
+    <tr>
+      <td align="center" style="padding-bottom: 30px">
+        <table cellspacing="0" cellpadding="0" width="55%" style="background-color: #3378F7; border-radius: 4px;">
+          <tbody>
+          <tr>
+            <td style="height: 50px; padding: 0 10px; text-align: center; cursor: pointer; color: #FFFFFF;">
+              <a target="_blank" rel="noopener noreferrer"
+                 style="text-decoration: none; color: #FFFFFF; line-height: 20px; font-size: 20px; font-weight: 700; display: block"
+                 href="${hostname}/survey?token=${token}">
+                Answer a couple of questions
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <!-- survey button end -->
+    <!-- customer text -->
+    <tr>
+      <td align="center">
+        ${customerTextBlock}
+      </td>
+    </tr>
+    <!-- customer text end -->
+    <!-- pulse link -->
+    <tr align="center">
+      <td style="padding: 30px 40px;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #EFF4FF; border-radius: 8px;">
+          <tbody>
+          <tr align="center">
+            <td align="center" style="padding: 35px 16px 8px">
+              <p style="margin: 0; color: #8A8E99; line-height: 20px; font-size: 14px; font-weight: 400">
+                Link not working?  Paste the following link into your browser:
+              </p>
+            </td>
+          </tr>
+          <tr align="center">
+            <td align="center" style="padding: 0 16px 35px">
+              <p style="word-break: break-word; line-height: 20px; font-size: 14px; font-weight: 400">
+                <a style="text-decoration: none" target="_blank" rel="noopener noreferrer" href="${hostname}/survey?token=${token}">
+                  ${hostname}/survey?token=${token}
+                </a>
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <!-- pulse link end -->
+  </tbody>
+</table>
